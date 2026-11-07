@@ -1,0 +1,8 @@
+# dsh-board —— DSH bundle patch
+# 挂载声明：DSH 启动时把本插件插进 profile 的配置树。
+# ⚠️ `name:` 必须与包名完全一致（dsh-board）。
+- insert:
+    - id: dsh-board
+      name: dsh-board
+      # 读面板要 webServer；派活/改状态靠 tools
+      inject: [tools, webServer]

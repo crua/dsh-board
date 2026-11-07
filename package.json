@@ -1,0 +1,41 @@
+{
+    "name":  "dsh-board",
+    "version":  "1.0.0",
+    "type":  "module",
+    "description":  "任务面板：从数据生成的板子（活区 / 卡住 / 失踪 / 没活的），只读，带插件信息与版本",
+    "main":  "lib/index.js",
+    "exports":  {
+                    ".":  "./lib/index.js",
+                    "./client":  "./lib/client.js",
+                    "./package.json":  "./package.json"
+                },
+    "files":  [
+                  "lib",
+                  "cordis.patch.yml"
+              ],
+    "keywords":  [
+                     "dsh",
+                     "dsh-plugin",
+                     "deepseek-harness",
+                     "board",
+                     "tasks"
+                 ],
+    "license":  "MIT",
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "inject":  [
+
+                                          ],
+                               "platform":  "web"
+                           }
+            },
+    "author":  "Deviel（家里自己写的）",
+    "homepage":  "D:\\\\AI\\\\DeepSeek\\\\Deviel\\\\01-方案\\\\GUI设计标准.md",
+    "repository":  {
+                       "type":  "git",
+                       "url":  ""
+                   }
+}
